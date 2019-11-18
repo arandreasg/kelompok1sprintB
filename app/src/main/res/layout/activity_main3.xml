@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/imageView2"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:fitsSystemWindows="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/grafikemas" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/homeimg" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <ImageView
+        android:id="@+id/imageView_beli"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerInParent="true"
+        android:paddingTop="10dp"
+        app:srcCompat="@drawable/iconemas" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_alignBottom="@id/imageView_beli"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        app:srcCompat="@drawable/icongadai" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="140dp"
+        android:layout_height="88dp"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        app:srcCompat="@drawable/iconpembiayaanusaha" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="119dp"
+        android:layout_height="79dp"
+        android:layout_below="@id/imageView_beli"
+        android:layout_alignRight="@id/imageView_beli"
+        android:layout_marginTop="25dp"
+        android:longClickable="false"
+        app:srcCompat="@drawable/iconlogammulia" />
+
+    <ImageView
+        android:id="@+id/dreambox_klik"
+        android:layout_width="142dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/imageView5"
+        android:layout_marginTop="25dp"
+        android:paddingRight="25dp"
+        app:srcCompat="@drawable/icontopup" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="147dp"
+        android:layout_height="79dp"
+        android:layout_alignBottom="@id/imageView7"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-7dp"
+        android:layout_marginBottom="-104dp"
+        app:srcCompat="@drawable/iconlokasicabang" />
+
+</RelativeLayout>
